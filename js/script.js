@@ -1,17 +1,13 @@
 function init() {
   var button = document.getElementById('entrybutton');
 
-  // Add click event handler directly to the button
-  button.onclick = function() {
-    var textbox = document.getElementById('entryinput');
-    var inputValue = textbox.value;
-
+  function  showMeText(){
+    var textbox =  document.getElementByID('entryinput');
     // Show an alert with the input value prefixed by your name
-    alert("Your Name: " + inputValue);
-
     // Update the text of the h2 element
-    document.getElementById('textoutput').textContent = inputValue;
-  };
+    document.getElementById('textoutput').innerHTML = textbox.value;
+    alert("Evelyn Myers " + textbox.value);
+  }
 
   // This is the  button being added to actually be clicked
   button.addEventListener('click', showMeText);

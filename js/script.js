@@ -12,6 +12,9 @@ function init() {
     // Update the text of the h2 element
     document.getElementById('textoutput').textContent = inputValue;
   };
+
+  // This is the  button being added to actually be clicked
+  button.addEventListener('click', showMeText);
 }
 
 window.addEventListener('load', init);

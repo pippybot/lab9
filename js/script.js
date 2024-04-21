@@ -2,7 +2,7 @@ function init() {
   var button = document.getElementById('entrybutton');
 
   function  showMeText(){
-    var textbox =  document.getElementByID('entryinput');
+    var textbox =  document.getElementById('entryinput');
     // Show an alert with the input value prefixed by your name
     // Update the text of the h2 element
     document.getElementById('textoutput').innerHTML = textbox.value;
